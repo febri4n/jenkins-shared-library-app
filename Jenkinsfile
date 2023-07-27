@@ -5,6 +5,13 @@ import febri4n.jenkins.Output;
 pipeline {
     agent any
     stages {
+        stage("Maven build") {
+            steps {
+                script {
+                    maven("clean compile")
+                }
+            }
+        }
         stage("Global variable") {
             steps {
                 script {
