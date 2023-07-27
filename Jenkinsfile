@@ -8,7 +8,7 @@ pipeline {
         stage("Maven build") {
             steps {
                 script {
-                    maven("clean compile")
+                    maven(["clean","compile","test"])
                 }
             }
         }
