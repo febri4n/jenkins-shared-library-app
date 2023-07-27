@@ -5,6 +5,16 @@ import febri4n.jenkins.Output;
 pipeline {
     agent any
     stages {
+        stage("Hello person") {
+            steps {
+                script {
+                    hello.person([
+                        firstName: "Febrian",
+                        lastName: "Saputra"
+                    ])
+                }
+            }
+        }
         stage("Maven build") {
             steps {
                 script {
