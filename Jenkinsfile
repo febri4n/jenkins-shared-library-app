@@ -5,6 +5,14 @@ import febri4n.jenkins.Output;
 pipeline {
     agent any
     stages {
+        stage("Global variable") {
+            steps {
+                script {
+                    echo(author.name())
+                    echo(author.channel())
+                }
+            }
+        }
         stage("Hello groovy") {
             steps {
                 script {
