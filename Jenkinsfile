@@ -1,9 +1,13 @@
 @Library("jenkins-shared-library@main") _
 
-import febri4n.jenkins.Output;
+// import febri4n.jenkins.Output;
 
-mavenPipeline()
+febri4nPipeline([
+    type: "maven"
+])
 
+// mavenPipeline()
+ 
 // pipeline {
 //     agent any
 //     stages {
