@@ -88,3 +88,5 @@ sudo systemctl status jenkins.service
 sudo systemctl stop jenkins.service
 
 ```
+![image](https://github.com/febri4n/jenkins-shared-library-app/assets/18482250/f93073fc-2cee-42d6-917e-53196088828e)
+
