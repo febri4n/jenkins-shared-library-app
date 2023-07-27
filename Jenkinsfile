@@ -3,7 +3,7 @@
 // import febri4n.jenkins.Output;
 
 febri4nPipeline([
-    type: "maven"
+    type: "wrong"
 ])
 
 // mavenPipeline()
