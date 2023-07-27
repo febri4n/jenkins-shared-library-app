@@ -5,6 +5,14 @@ import febri4n.jenkins.Output;
 pipeline {
     agent any
     stages {
+        stage("Library resources") {
+            steps {
+                script {
+                    def config = libraryResource("config/build.json")
+                    echo(config)
+                }
+            }
+        }
         stage("Hello person") {
             steps {
                 script {
